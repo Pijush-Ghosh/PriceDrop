@@ -24,9 +24,9 @@ export default function AuthButton({ user }) {
             variant="ghost"
             size="sm"
             type="submit"
-            className="gap-2 cursor-pointer"
+            className="gap-2 "
           >
-            <LogOut className="w-4 h-4" />
+            <LogOut className="w-4 h-4 " />
             Sign Out
           </Button>
         </form>

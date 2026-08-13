@@ -42,24 +42,24 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Image
-              src="/deal-drop-logo.png"
+              src="/price-drop-logo.png"
               alt="Deal Drop Logo"
               width={600}
               height={200}
-              className="h-10 w-auto"
+              className="h-18 w-auto"
             />
           </div>
 
           <AuthButton user={user} />
         </div>
       </header>
-      
+
 
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-6 py-2 rounded-full text-sm font-medium mb-6">
-            Made by Pijush 
+            Made by Pijush
           </div>
 
           <h2 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
