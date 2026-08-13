@@ -16,7 +16,7 @@ export default function AuthButton({ user }) {
         <img
           src={user.user_metadata.avatar_url}
           alt="Profile"
-          className="w-10 h-10 rounded-full"
+          className="w-8 h-8 rounded-full"
         />
 
         <form action={signOut}>
@@ -24,7 +24,7 @@ export default function AuthButton({ user }) {
             variant="ghost"
             size="sm"
             type="submit"
-            className="gap-2"
+            className="gap-2 cursor-pointer"
           >
             <LogOut className="w-4 h-4" />
             Sign Out

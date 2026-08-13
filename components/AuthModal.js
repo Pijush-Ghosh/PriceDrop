@@ -39,7 +39,7 @@ export default function AuthModal({ isOpen, Closefn }) {
           <Button
             onClick={handleGoogleLogin}
             variant="outline"
-            className="w-full gap-2"
+            className="w-full gap-2 cursor-pointer"
             size="lg"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
