@@ -10,13 +10,27 @@ export default function AuthButton({ user }) {
   const [showAuthModal, setShowAuthModal] = useState(false);
 
   if (user) {
+    console.log("User object:", user);
     return (
-      <form action={signOut}>
-        <Button variant="ghost" size="sm" type="submit" className="gap-2">
-          <LogOut className="w-4 h-4" />
-          Sign Out
-        </Button>
-      </form>
+      <div className="flex items-center gap-3">
+        <img
+          src={user.user_metadata.avatar_url}
+          alt="Profile"
+          className="w-10 h-10 rounded-full"
+        />
+
+        <form action={signOut}>
+          <Button
+            variant="ghost"
+            size="sm"
+            type="submit"
+            className="gap-2"
+          >
+            <LogOut className="w-4 h-4" />
+            Sign Out
+          </Button>
+        </form>
+      </div>
     );
   }
 
